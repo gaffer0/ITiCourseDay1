@@ -1,0 +1,13 @@
+﻿<table class="card" style="width: 400px">
+
+@foreach(Product item in Model)
+    {
+        <tr>
+
+            <td>@item.Name</td>
+            <td>@item.Price</td>
+            <td><img src="/iamges/@item.Image" style="width:100px"/></td>
+        </tr>
+    }
+
+</table>
